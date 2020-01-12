@@ -8,31 +8,50 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Spotifly</title>
 </head>
 
-<body >
-    <!--navibar-->
-    <div style="background-color: #212121;">
-        <ul class="nav justify-content-end ">
-            <li class="nav-item">
-                <a class="nav-link active" href="Inscrever-se.html">Inscrever-se</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Entrar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Buscar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Desativado</a>
-            </li>
-        </ul>
-    </div>
+<body class="h-100">
 
-    <div class='d-flex flex-row' >
-        <!-- sidebar -->
-    <div style='display: block;width: 10%; background-color:#212121;' >
+    <!--navbar-->
+    <nav class="navbar bd-navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Spotifly</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <div class="nav ">
+                <div class="row">
+                    <div class="col">
+                        <form class="my-2 my-lg-0 ">
+                            <input class="form-control " type="search" placeholder="Search...">
+                        </form>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <a class="btn btn-success my-2 my-sm-0 px-5 text-light">Buscar</a>
+                    </div>
+                </div>
+                <!--.row-->
+            </div>
+            <!--.container-->
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="nav justify-content-end ">
+                <li class="nav-item">
+                    <a class="nav-link active" href="Inscrever-se.html">Inscrever-se</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entrar.html">Entrar</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <aside style='display: block;position: fixed; background-color:#212121;'>
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Home</a>
@@ -43,86 +62,88 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Desativado</a>
-            </li>
         </ul>
+    </aside>
+    <div class='row d-flex justify-content-center'>
+
+
+
+        <!-- corpo -->
+        <center>
+            <main class="">
+                <H1>Foco</H1>
+                <p>Lista com várias opções de música para ajudar ao foco de seus estudos ou leitura.</p>
+                <ul class="nav">
+
+                    <li>
+                        <div class="card">
+                            <img class="card-img-top" style="width: 18rem; height:10rem; "
+                                src="imagens/pink floyd-time.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pink Floyd - Time</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                    preencher o conteúdo do card.</p>
+                                <a href="#" class="btn btn-primary">Play</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img class="card-img-top" style="width: 18rem; height:10rem; "
+                                src="imagens/pink floyd-usandthem.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pink Floyd - Us And Them</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                    preencher o conteúdo do card.</p>
+                                <a href="#" class="btn btn-primary">Play</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img class="card-img-top" style="width: 18rem; height:10rem; "
+                                src="imagens/metallica-nothing.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1em;">Metallica - Nothing Else Matters</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                    preencher o conteúdo do card.</p>
+                                <a href="#" class="btn btn-primary">Play</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img class="card-img-top" style="width: 18rem; height:10rem; "
+                                src="imagens/alone - alan walker.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Alone - Alan Walker</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                    preencher o conteúdo do card.</p>
+                                <a href="#" class="btn btn-primary">Play</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img class="card-img-top" style="width: 18rem; height:10rem; "
+                                src="imagens/Dance Monkey - Tones And I.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1em;">Dance Monkey - Tones And I</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                    preencher o conteúdo do card.</p>
+                                <a href="#" class="btn btn-primary">Play</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </main>
+        </center>
     </div>
 
 
-    <!-- corpo -->
-    <div class=" bg-secondary" style="display: block; width: 90%; background-color:#616161;">
-        <H1>Foco</H1>
-        <p>Lista com várias opções de música para ajudar ao foco de seus estudos ou leitura.</p>
-        <ul class="nav">
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" style="width: 18rem; height:10rem "src="imagens/pink floyd-time.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Pink Floyd - Time</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o conteúdo do card.</p>
-                        <a href="#" class="btn btn-primary">Play</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" style="width: 18rem; height:10rem "src="imagens/pink floyd-usandthem.png" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Pink Floyd - Us And Them</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o conteúdo do card.</p>
-                        <a href="#" class="btn btn-primary">Play</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top"style="width: 18rem; height:10rem " src="imagens/metallica-nothing.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 1em;">Metallica - Nothing Else Matters</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o conteúdo do card.</p>
-                        <a href="#" class="btn btn-primary">Play</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" style="width: 18rem; height:10rem "src="imagens/alone - alan walker.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Alone - Alan Walker</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o conteúdo do card.</p>
-                        <a href="#" class="btn btn-primary">Play</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" style="width: 18rem; height:10rem "src="imagens/Dance Monkey - Tones And I.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Dance Monkey - Tones And I</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o conteúdo do card.</p>
-                        <a href="#" class="btn btn-primary">Play</a>
-                    </div>
-                </div>
-            </li>
-            <li><div class="card" style="width: 18rem;">
-                <img class="card-img-top"style="width: 18rem; height:10rem " src="imagens/shawn mendes e camila cabello.jpg" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Señorita - Shawn Mendes feat Camila Cabello</h5>
-                  <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                  <a href="#" class="btn btn-primary">Play</a>
-                </div>
-              </div></li>
-        </ul>
-        
 
-    </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
